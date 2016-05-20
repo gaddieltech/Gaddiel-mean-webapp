@@ -1,0 +1,57 @@
+<html ng-app>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+
+		<link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css" >
+		<link rel="stylesheet" type="text/css" href="resources/css/bootstrap-responsive.min.css" >
+		<link rel="stylesheet" type="text/css" href="resources/css/alveolae.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/pageStyle.css">
+       		
+		<!--css-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+		<script src="controllers/controller.js"></script>
+		<script>
+		function register()
+		{
+		    window.location.href = "register.html";
+		}
+		</script>
+		<!--javascript-->
+		<title>CruD</title>
+	</head>
+	
+	<body>
+		<div class="container" ng-controller="AppCtrl">
+		<h1>Crud App</h1>
+									
+				<div class="span5">			
+							<div class="widget">
+								<div class="widget-header ">
+									<h3>Login</h3>
+								</div>								
+								<div class="widget-content">
+									<form method="post" action="">
+									
+									<div class="span1"><label>Username</label></div>
+									  <div class="span3"><input ng-model="cruds.email" placeholder="Username" class="span3 form-control" type="text"/>
+									  <span class="validate_color" id="spanUsernameId"></span></div>
+									<div class="span1"><label>Password</label></div>									  
+									  <div class="span3"><input ng-model="cruds.password" class="form-control span3" placeholder="Password" type="password"/></div> <div class="span3"></div>
+									<div class="row">
+									 <div class="span2">
+										<button class="btn btn-block btn-sl btn-success span2" ng-click="login()">Login</button>
+									</div>
+									<div class="span2">
+										<button class="btn btn-block btn-sl btn-success span2" onclick="register()">Register</button>
+									</div>
+								</div>
+								</form>
+								</div>
+			
+							</div>	
+
+                </div>
+        </div>
+    </body>
+</html>

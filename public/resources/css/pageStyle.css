@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+.oddtr
+{
+background-color:#FFFFFF;
+}
+.eventr
+{
+	background-color:#F5F5F5;
+}
+.trover
+{
+background-color: #81F781;
+}
+.trclick
+{
+	background-color: #7EC2EB;
+}
+
+.icon-right{
+float:right;
+margin-right: 5px;
+margin-top: 5px;
+padding-left:3px;
+padding-right:3px;
+
+}
+

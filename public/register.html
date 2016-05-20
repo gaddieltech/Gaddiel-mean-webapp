@@ -1,0 +1,102 @@
+<html ng-app>
+	<head>
+		  <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css" >
+		<link rel="stylesheet" type="text/css" href="resources/css/bootstrap-responsive.min.css" >
+		<link rel="stylesheet" type="text/css" href="resources/css/alveolae.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/pageStyle.css">	
+		<link rel="stylesheet" type="text/css" href="../../resources/css/footable.core.css?v=2-0-1">
+    <link rel="stylesheet" type="text/css" href="../../resources/css/footable-demos.css">
+		<!--css-->
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>	
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>		
+		<script src="controllers/controller.js"></script>
+		<!--javascript-->
+		<title></title>
+	</head>
+	
+	<body>
+		<div class="container" ng-controller="AppCtrl">
+		
+			<h1>Crud App</h1>
+				<div class="ui form segment">
+				    <div class="row">
+					     <div class="span4">
+							<label class="span4">First Name</label>
+						</div>
+						<div class="span7">
+							<input ng-model="cruds.firstname" class="span4" type="text"/>	
+						</div>					
+					     <div class="span4">
+							<label class="span4">Last Name</label>
+						</div>
+						<div class="span7">
+							<input ng-model="cruds.lastname" class="span4" type="text"/>	
+						</div>
+					</div>
+					<div class="row">
+					     <div class="span4">
+							<label class="span4">Email</label>
+						</div>
+						<div class="span3">
+							<input ng-model="cruds.email" class="span4" type="text"/>	
+						</div>
+					</div>
+					<div class="row">
+					     <div class="span4">
+							<label class="span4">Password</label>
+						</div>
+						<div class="span7">
+							<input ng-model="cruds.password" class="span4" type="password"/>	
+						</div>
+					</div>
+					<div class="row">
+					     <div class="span4">
+							<label class="span4">Age</label>
+						</div>
+						<div class="span7">
+							<input ng-model="cruds.age" class="span4" type="text"/>	
+						</div>
+					</div>
+					<div class="row">
+					     <div class="span4">
+							<label class="span4">mobile Number</label>
+						</div>
+						<div class="span7">
+							<input ng-model="cruds.mobileNumber" class="span4" type="text"/>	
+						</div>
+					</div>
+					<div class="row">
+					     <div class="span4">
+							<label class="span4">Address</label>
+						</div>
+						<div class="span7">
+							<input ng-model="cruds.address" class="span4" type="text"/>	
+						</div>
+					</div>
+					<div class="row">
+					     <div class="span4">
+							<label class="span4">pincode</label>
+						</div>
+						<div class="span7">
+							<input ng-model="cruds.pincode" class="span4" type="text"/>	
+						</div>
+					</div>
+					<div class="row">
+					     <div class="span2">
+							<button class="btn btn-info span2"  ng-click="addcontact()">Add Contact</button>
+						</div>
+						<div class="span2">
+							<button class="btn btn-info span2" ng-click="deselect()">Clear</button>
+						</div>
+					</div>					
+				</div>
+
+         </div>
+
+    </body>
+	<script>
+
+	</script>
+</html>

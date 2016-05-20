@@ -1,0 +1,128 @@
+<html ng-app>
+<head>
+
+<title>Crud</title>
+</head>
+	    <link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css" >
+		<link rel="stylesheet" type="text/css" href="resources/css/bootstrap-responsive.min.css" >
+		<link rel="stylesheet" type="text/css" href="resources/css/alveolae.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/pageStyle.css">	
+		<link rel="stylesheet" type="text/css" href="../../resources/css/footable.core.css?v=2-0-1">
+    <link rel="stylesheet" type="text/css" href="../../resources/css/footable-demos.css">
+	
+	   <script type="text/javascript" src="resources/angular.min.js"></script>
+      <script src="controllers/controller.js"></script>
+	  
+    <!-- CSS files -->
+   
+	
+    <!-- Google font -->
+   
+	<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->	
+</head>
+
+<body>
+	<!-- Navbar -->
+	<!-- Main content -->
+	<div id="main-content" ng-controller="SearchCtrl">
+		<!-- Container -->
+		<div class="container">
+			<!-- Header boxes -->
+			<div class="box-container">
+				
+			</div>
+			<!-- /Header boxes -->
+			<!-- row boxes -->
+			<div class="row">
+			   <div class="span12 desktop">
+				 <div class="widget">                 					
+					<div class="widget-content "> 
+						<div class="span8"><h3>User List </h3></div>                       
+						<div class="span3">                                                                
+							                   						
+							
+							 <div class="box-holder">
+							   
+							   <div class="box"><a href="update.html" ><img src="resources/images/e-close.png"/></br>Close</div></a>							
+                             </div>                          
+						</div>
+					</div>
+				</div>								
+			 </div>
+				<!-- /Content -->
+					<div class="span12">
+					    <div class="widget">					
+						<div class="widget-content">
+							<div class="mobile"><h3>User List </h3></div> 													
+                           <div class="span8"><input type="text" autofocus class="span5" placeholder="Search List"  id="searchActivityCode" ng-model="searchEmail"/></div>               							                         							
+							 <div class="span3"><button class="btn btn-info span2" onClick="clearvalue()" ng-click="deselect()">Clear</button></div>							
+						</div>
+					   </div>  
+			  </div>  
+				 <!------>
+                <!-- /Content -->
+				<div class="span12">
+					<div class="widget-content">
+						<div class="row">
+							
+								
+									<div ng-repeat="contact in contactlist" class="span3" style=" margin-bottom:20px; background-color:#FFFFFF; border-style:solid; border-width:1px;">
+										<div class="box-header" style="height:110px; ">
+											<a href="#" ng-click="edit(contact._id)" class="btn btn-small ">
+										</div>
+										<div class="box-body" style="height:110px; background-color:#00CC99;">
+											<div class="span3">F-Name :	{{contact.firstname}}</div>
+											<div class="span3">L-Name :	{{contact.lastname}}</div>
+											<div class="span3">Age :	{{contact.age}}</div>
+											<div class="span3">Email :	{{contact.email}}</div>
+										</div>
+									</div>
+									
+									
+						</div>					
+					</div>
+				</div>
+			</div>          
+                <!------>
+			</div><!-- /row boxes -->
+			
+			<!-- Footer -->
+			<!-- /Footer -->
+	 <!-- Navbar -->
+			<div class="dock-wrapper row">    
+				<div class="navbar navbar-fixed-bottom">
+					<div class="navbar-inner">
+						<div class="container">                         
+							   <center>
+								 <div class="btn-group btn-group-justified">                     
+							   <a class="newenable btn btn-default" onClick="newPage()" id="newenable">
+									 <img src="resources/images/e-add.png"/><br>New</a>                       													 
+													   
+								<a href="../../houseKeeping.php" class="btn btn-default">
+									<img src="resources/images/e-close.png"/><br>Cancel</a>                              </div>
+						  </center>                        		
+						</div>
+					</div>
+				</div>
+			</div>
+	<!-- /Navbar -->
+		</div>
+		<!-- /Container -->
+	</div>
+	<!-- /Main content -->
+     </form>
+	
+</body>
+<!-- Javascript files -->
+ <script type="text/javascript">
+function clearvalue()
+{
+	
+	document.getElementById("searchActivityCode").value="";
+}
+    </script>
+
+</html>

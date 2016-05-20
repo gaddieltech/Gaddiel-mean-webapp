@@ -1,0 +1,105 @@
+<html ng-app>
+	<head>
+		<!-- Latest compiled and minified CSS -->
+
+		<link rel="stylesheet" type="text/css" href="resources/css/bootstrap.min.css" >
+		<link rel="stylesheet" type="text/css" href="resources/css/bootstrap-responsive.min.css" >
+		<link rel="stylesheet" type="text/css" href="resources/css/alveolae.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="resources/css/pageStyle.css">	
+		<!--css-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+		<script src="controllers/controller.js"></script>
+		<!--javascript-->
+		<title></title>
+	</head>
+	
+	<body>
+		<div class="container" ng-controller="AppCtrll">
+		
+			<h1>Crud App</h1>
+				<div class="box-container">
+				    <div class="row">
+					     <div class="span4">
+							<label class="span4">First Name</label>
+						</div>
+						<div class="span7">
+							<input ng-model="cruds.firstname" class="span4" type="text"/>	
+						</div>
+					</div>
+					<div class="row">
+					     <div class="span4">
+							<label class="span4">Last Name</label>
+						</div>
+						<div class="span7">
+							<input ng-model="cruds.lastname" class="span4" type="text"/>	
+						</div>
+					</div>
+					<div class="row">
+					     <div class="span4">
+							<label class="span4">Email</label>
+						</div>
+						<div class="span3">
+							<input ng-model="cruds.email" class="span4" type="text"/>	
+						</div>
+					</div>
+					<div class="row">
+					     <div class="span4">
+							<label class="span4">Password</label>
+						</div>
+						<div class="span7">
+							<input ng-model="cruds.password" class="span4" type="password"/>	
+						</div>
+					</div>
+					<div class="row">
+					     <div class="span4">
+							<label class="span4">Age</label>
+						</div>
+						<div class="span7">
+							<input ng-model="cruds.age" class="span4" type="text"/>	
+						</div>
+					</div>
+					<div class="row">
+					     <div class="span4">
+							<label class="span4">mobile Number</label>
+						</div>
+						<div class="span7">
+							<input ng-model="cruds.mobileNumber" class="span4" type="text"/>	
+						</div>
+					</div>
+					<div class="row">
+					     <div class="span4">
+							<label class="span4">Address</label>
+						</div>
+						<div class="span7">							
+                              <textarea id="text" cols="40" rows="4" class="span4"  ng-model="cruds.address"></textarea>							
+						</div>
+					</div>
+					<div class="row">
+					     <div class="span4">
+							<label class="span4">pincode</label>
+						</div>
+						<div class="span7">
+							<input ng-model="cruds.pincode" class="span4" type="text"/>	
+						</div>
+					</div>
+					<div class="row">
+					     <div class="span2">
+							<button class="btn btn-info span2" ng-click="update()">Update</button>
+						</div>
+						<div class="span2" id="gridView">
+							<button class="btn btn-info span2" ng-click="search()">Search</button>
+						</div>
+						<div class="span2">
+							<button class="btn btn-info span2" ng-click="remove(cruds._id)">Delete</button>
+						</div>
+						<div class="span2"> <a href="index.html">
+							<button class="btn btn-info span2" >Close</button></a>
+						</div>
+					</div>					
+				</div>
+
+         </div>
+
+    </body>
+</html>
